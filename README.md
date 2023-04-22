@@ -1,2 +1,2 @@
 # OC-Projet3
- Projet-3 d'OpenClassRooms
+Projet 3 d'OpenClassRooms
