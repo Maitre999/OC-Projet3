@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="La panthere, contact, agence de web design">
+    <meta name="description" content="Formulaire de contact">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+	<meta name="robots" content="noindex">
+
+	<link rel="shortcut icon" type="image/png" href="./assets/favicon.png">
+	<link rel="stylesheet" type="text/css" href="./css/style.min.css">
+
+	<script src="./js/jquery-2.1.0.min.js" defer></script>
+	<script src="./js/jqBootstrapValidation.min.js" defer></script>
+	<script src="./js/formHandler.min.js" defer></script>
+
+	<title>Contact</title>
+
+<!-- Analytics -->
+
+<!-- Analytics END -->
+</head>
+
+<body>
+	<!--Header > Logo + Navigation-->
+	<header class="header">
+		<div class="header-wrapper">
+			<svg class="logo"  aria-label="Logo, La Panthère">
+				<use href="./assets/sprites.svg#logo"></use>
+			</svg>
+			<button aria-label="Ouvrir le menu" class="toggle-nav" onclick="myFunction()">
+				<svg class="navbar">
+					<use href="assets/sprites.svg#navbar"></use>
+				</svg>
+			</button>
+			<nav class="navigation">
+				<ul class="navbar">
+					<li class="nav-button">
+						<a href="index.html">Accueil</a>
+					</li>
+					<li class="nav-button">
+						<a href="contact.html">Contact</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		<nav class="navigation-slide" id="nav-slide">
+			<ul class="navbar-slide">
+				<li class="nav-button">
+					<a href="index.html">Accueil</a>
+				</li>
+				<li class="nav-button">
+					<a href="contact.html">Contact</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<!--Banner-->
+		<article class="banner-contact">
+			<h1 class="contact-title">
+				Parlons web design !
+			</h1>
+			<p class="text">
+				Nous sommes ravis que vous souhaitiez collaborer avec notre agence.<br>
+				Parlez-nous de votre projet en complétant le formulaire ci-dessous.
+			</p>
+		</article>
+		<!--Contact-formulaire-->
+		<form id="form_1" novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
+			<div class="form-group">
+				<label>Nom</label>
+				<input id="name" class="form-control" aria-label="Nom" required />
+			</div>
+			<div class="form-group">
+				<label>Adresse email</label>
+				<input id="email" class="form-control" aria-label="email" type="email" required />
+			</div>
+			<div class="form-group">
+				<label>Comment nous avez-vous connu ?</label>
+				<input class="form-control" aria-label="question" type="text" required id="input_504" />
+			</div>
+			<div class="form-group">
+				<label>Brief de votre projet (Ajoutez autant de détails que nécessaire)<br></label>
+				<textarea id="message" class="form-control" aria-label="Votre projet" rows="4" cols="50" required></textarea>
+			</div> 
+			<button class="button send" type="submit" value="Submit">
+				Envoyer
+			</button>
+		</form>
+		<p class="adress">
+			contact@agencelapanthere.com<br>2 place Sathonay 69001 Lyon<br>Ouvert de 9h à 18h, du lundi au vendredi<br>
+		</p>
+	</main>
+	<!--Footer-->
+	<footer>
+		<p class="text">
+			Agence La Panthère - Agence web basée à Lyon.<br>
+		</p>
+		<nav class="container-social">
+			<a class="social" href="index.html">Twitter
+				<svg class="twitter-icon">
+					<use href="assets/sprites.svg#twitter-icon"></use>
+				</svg>
+			</a>
+			<a class="social" href="index.html">Facebook
+				<svg class="facebook-icon">
+					<use href="assets/sprites.svg#facebook-icon"></use>
+				</svg>
+			</a>
+			<a class="social" href="index.html">Dribble
+				<svg class="dribble-icon">
+					<use href="assets/sprites.svg#dribble-icon"></use>
+				</svg>
+			</a>
+			<a class="social" href="index.html">Instagram
+				<svg class="instagram-icon">
+					<use href="assets/sprites.svg#instagram-icon"></use>
+				</svg>
+			</a>
+		</nav>
+	</footer>
+	<script>
+		function myFunction() {
+			var element = document.getElementById("nav-slide");
+			element.classList.toggle("open");
+	} 
+	</script>
+</body>
+</html>
